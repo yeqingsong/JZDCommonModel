@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JZDCommonModel_Example' do
+  pod 'JZDCommonModel', :path => '../'
+
+  target 'JZDCommonModel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
