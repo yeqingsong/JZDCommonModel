@@ -40,7 +40,7 @@
 		03D3657E1776214542B4E6F6 /* Pods-JZDCommonModel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZDCommonModel_Tests.release.xcconfig"; path = "Target Support Files/Pods-JZDCommonModel_Tests/Pods-JZDCommonModel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		07D6A1842159F11154797956 /* Pods-JZDCommonModel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZDCommonModel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JZDCommonModel_Tests/Pods-JZDCommonModel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0CAB902048CBC0EDDE6A2A94 /* Pods-JZDCommonModel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZDCommonModel_Example.release.xcconfig"; path = "Target Support Files/Pods-JZDCommonModel_Example/Pods-JZDCommonModel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		33445A2463B34E8656FFA8FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		33445A2463B34E8656FFA8FD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5CD8420964D2BC7EAD3BE475 /* Pods_JZDCommonModel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZDCommonModel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JZDCommonModel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZDCommonModel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,9 +62,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		768C7AFFE92C02FE713B7DE0 /* JZDCommonModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JZDCommonModel.podspec; path = ../JZDCommonModel.podspec; sourceTree = "<group>"; };
+		768C7AFFE92C02FE713B7DE0 /* JZDCommonModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JZDCommonModel.podspec; path = ../JZDCommonModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDF2C49F9EF2F7E33DE5A9DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CDF2C49F9EF2F7E33DE5A9DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D6E98A3BC7B7B55FC056605A /* Pods_JZDCommonModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZDCommonModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E221FDA64552A02C6A4D9A4E /* Pods-JZDCommonModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZDCommonModel_Example.debug.xcconfig"; path = "Target Support Files/Pods-JZDCommonModel_Example/Pods-JZDCommonModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				07D6A1842159F11154797956 /* Pods-JZDCommonModel_Tests.debug.xcconfig */,
 				03D3657E1776214542B4E6F6 /* Pods-JZDCommonModel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yeqingsong;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 824MR7DB6S;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +305,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JZDCommonModel_Example/Pods-JZDCommonModel_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FCUUID/FCUUID.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/JZDCommonModel/JZDCommonModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UICKeyChainStore/UICKeyChainStore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCUUID.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JZDCommonModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICKeyChainStore.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,6 +507,7 @@
 			baseConfigurationReference = E221FDA64552A02C6A4D9A4E /* Pods-JZDCommonModel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 824MR7DB6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JZDCommonModel/JZDCommonModel-Prefix.pch";
 				INFOPLIST_FILE = "JZDCommonModel/JZDCommonModel-Info.plist";
@@ -510,6 +524,7 @@
 			baseConfigurationReference = 0CAB902048CBC0EDDE6A2A94 /* Pods-JZDCommonModel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 824MR7DB6S;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JZDCommonModel/JZDCommonModel-Prefix.pch";
 				INFOPLIST_FILE = "JZDCommonModel/JZDCommonModel-Info.plist";

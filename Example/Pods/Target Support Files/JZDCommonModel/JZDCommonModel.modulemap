@@ -1,0 +1,6 @@
+framework module JZDCommonModel {
+  umbrella header "JZDCommonModel-umbrella.h"
+
+  export *
+  module * { export * }
+}
